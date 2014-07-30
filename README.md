@@ -1,4 +1,7 @@
 ansible-role-sublimetext
 ========================
 
-Install sublime text with ansible
+Ansible role to install sublimetext
+
+# Notes
+- Support only sublimetext 3

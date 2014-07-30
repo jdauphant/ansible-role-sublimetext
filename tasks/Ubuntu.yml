@@ -1,0 +1,8 @@
+---
+- name: Download sublimetext
+  get_url: url={{ sublimetext_url_deb }} dest={{sublimetext_tmp_deb}}
+  tags: ["packages","sublimetext"]
+
+- name: Install sublimetext for Ubuntu
+  apt: deb={{sublimetext_tmp_deb}}
+  tags: ["packages","sublimetext"]
