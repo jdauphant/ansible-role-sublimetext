@@ -50,8 +50,10 @@ galaxy_info:
   #  - 9.1
   #  - 9.1
   #  - 9.2
-  #- name: Ubuntu
-  #  versions:
+  - name: Ubuntu
+    versions:
+     - utopic
+     - trusty
   #  - all
   #  - lucid
   #  - maverick
@@ -94,7 +96,7 @@ galaxy_info:
   #- database
   #- database:nosql
   #- database:sql
-  #- development
+   - development
   #- monitoring
   #- networking
   #- packaging
