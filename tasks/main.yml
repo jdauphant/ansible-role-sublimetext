@@ -1,3 +1,3 @@
 ---
  - include: Debian.yml
-   when: ansible_distribution == 'Debian'
+   when: ansible_os_family == 'Debian'
