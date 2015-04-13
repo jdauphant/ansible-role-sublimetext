@@ -3,6 +3,6 @@
   get_url: url={{ sublimetext_url_deb }} dest={{sublimetext_tmp_deb}}
   tags: ["packages","sublimetext"]
 
-- name: Install sublimetext for Ubuntu
+- name: Install sublimetext for Debian family OS
   apt: deb={{sublimetext_tmp_deb}}
   tags: ["packages","sublimetext"]
