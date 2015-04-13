@@ -24,5 +24,5 @@ https://galaxy.ansible.com/list#/roles/3070
 - hosts: all
   roles:
     - role: jdauphant.sublimetext
-      sublimetext3_build:  3083
+      sublimetext_build:  3083
 ```  
