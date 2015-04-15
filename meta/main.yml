@@ -85,6 +85,12 @@ galaxy_info:
   #  - squeeze
      - wheezy
      - jessie
+  - name: Darwin
+    versions: 
+     - Lion
+     - Mountain Lion
+     - Mavericks
+     - Yosemite
   #
   # Below are all categories currently available. Just as with
   # the platforms above, uncomment those that apply to your role.

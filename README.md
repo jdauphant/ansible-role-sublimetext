@@ -1,7 +1,7 @@
 ansible-role-sublimetext
 ========================
 
-Ansible role to install Sublime Text
+Ansible role to install Sublime Text on Debian, Ubuntu, and Mac OS X.
 
 https://galaxy.ansible.com/list#/roles/3070
 
