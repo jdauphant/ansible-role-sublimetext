@@ -1,5 +1,5 @@
 ---
-- name: Download sublimetext
+- name: "Download sublimetext's .deb file"
   get_url: url={{ sublimetext_url_deb }} dest={{sublimetext_tmp_deb}}
   tags: ["packages","sublimetext"]
 
