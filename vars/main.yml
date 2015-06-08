@@ -1,4 +1,11 @@
 ---
 sublimetext_arch: "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
-sublimetext_url_deb: "{{sublimetext_dl_source}}/sublime-text_build-{{sublimetext_build}}_{{sublimetext_arch}}.deb"
 
+# --- Debian vars ---
+sublimetext_url_deb: "{{sublimetext_dl_source}}/sublime-text_build-{{sublimetext_build}}_{{sublimetext_arch}}.deb"
+sublimetext_tmp_deb: "/tmp/{{sublimetext_build}}sublimetext.deb"
+
+# --- MacOSX vars ---
+sublimetext_url_dmg: "{{sublimetext_dl_source}}/Sublime%20Text%20Build%20{{sublimetext_build}}.dmg"
+sublimetext_tmp_dmg: "/tmp/{{sublimetext_build}}sublimetext.dmg"
+sublimetext_mount: "/Volumes/Sublime Text/"

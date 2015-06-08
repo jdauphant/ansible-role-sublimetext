@@ -1,0 +1,22 @@
+---
+- name: "Download sublimetext's .dmg file"
+  get_url: url="{{ sublimetext_url_dmg }}" dest="{{ sublimetext_tmp_dmg }}"
+
+- name: "Mount sublimetext's .dmg file"
+  command: hdiutil attach {{ sublimetext_tmp_dmg }} chdir=/tmp
+
+- name: "Copy sublimetext app to Applications directory"
+  copy: 
+    src: "{{ sublimetext_mount }}/Sublime Text.app" 
+    dest: "/Applications"
+    mode: "u=rwx,g=rx,o=rx" 
+
+- name: "Unmount sublimetext's .dmg file"
+  command: hdiutil detach "{{ sublimetext_mount }}"
+
+- name: "Ensure symlinks in bin"
+  sudo: Yes
+  file: src="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" dest="/usr/bin/{{ item }}" state=link
+  with_items:
+    - subl
+    - sublime

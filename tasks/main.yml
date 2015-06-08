@@ -1,3 +1,6 @@
 ---
- - include: Ubuntu.yml
-   when: ansible_distribution == 'Ubuntu'
+ - include: Debian.yml
+   when: ansible_os_family == 'Debian'
+
+ - include: MacOSX.yml
+   when: ansible_distribution == 'MacOSX'
