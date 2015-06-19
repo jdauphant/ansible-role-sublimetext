@@ -1,6 +1,6 @@
 ---
  - include: Debian.yml
-   when: ansible_os_family == 'Debian'
+   when: ansible_os_family in ['Debian', 'Linuxmint']
 
  - include: MacOSX.yml
    when: ansible_distribution == 'MacOSX'
